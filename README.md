@@ -6,7 +6,7 @@ is a public library to easily handle arguments in **C++** *(!)*
 
 ## how to use ⁉️
 to use **ecah-lib** you need to [download](https://github.com/jstmaxlol/ecah-lib/blob/main/ecah-lib.h) the library's **.h (header)** file and `#include` it in your **C++** project \
-`#include "<pathToHeaderFile.h"` or if you have it in the same directory as your **.cpp** file `#include "ecah-lib.h"` \
+`#include "pathToHeaderFile.h"` or if you have it in the same directory as your **.cpp** file `#include "ecah-lib.h"` \
 here's an example program;
 ```
 #include "ecah-lib.h" // Including ecah-lib in our project
