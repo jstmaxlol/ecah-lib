@@ -1,31 +1,25 @@
-#include <iostream>
-#include <string>
-using namespace std;
-
-#include "ecah-lib.h"
 ///
-// [n!] ecah-lib 's standard namespace is 'eca'
-///
-// ecah-lib - example program
+// ecah-lib >> example program
 ///
 
-int main(int argc, char* argv[]) {
-  // check for arguments with eca::arg.chk()
-	if (eca::arg.chk(argc, argv) == true) {
-		cout << "true\n";
-	}
-	else if (eca::arg.chk(argc, argv) == false) {
-		cout << "false\n";
-	}
+#include "ecah-lib.h" // Including ecah-lib in our project (in this example, the .h file is in our same directory)
+using namespace eca; // Optionally use the `eca` namespace (Basically if you do not want to use the `eca::` prefix on ecah-lib's methods/functions)
 
-  // testing the eca::arg.store() method
-	string firstArg, exeName;
-	eca::arg.store(firstArg, 1, argc, argv);
-	eca::arg.store(exeName, 0, argc, argv);
-	cout << "the first argument is: " << firstArg;
-	cout << "\nthe executable's name is: " << exeName << "\n";
+int main(int argc, char* argv[]) // argc = count of command-line arguments, argv = array of command-line argument strings
+{
+	string firstArgument; // Create an empty string
 
-  // testing the eca::printUsage() method
-	eca::printUsage();
-	return 0;
+	arg.store(firstArgument, 1, argc, argv); // Store the first argument in the string `programName` (index 1 in the argv array)
+
+	cout << "The first argument is: " << firstArgument << "\n"; // Prints the first argument
+
+	return 0; // Returns 0 (Basically quits the program)
 }
+
+/* 
+	Compiled with g++ on Arch Linux, output;
+	
+	$ g++ -o test main.cpp
+	$ ./test Hello!
+	The first argument is: Hello!
+*/
