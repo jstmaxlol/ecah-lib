@@ -26,11 +26,11 @@ namespace eca {
         * @param argv array of command-line argument strings.
         **/
         bool store(string& output, int chArg, int argc, char* argv[]) {
+            if (argv == nullptr || chArg < 0 || chArg >= argc) {return false;}
             if (argc > 1) {
                 output = argv[chArg];
                 return true;
-            }
-            return false;
+            } return false;
         }
     }; arg arg;
 
