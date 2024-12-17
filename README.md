@@ -34,4 +34,4 @@ int main(int argc, char* argv[]) // argc = count of command-line arguments, argv
 
 
 &nbsp;
-###### { jstmax! } @ { 62 69 74 2E 6C 79 2F 6D 78 5F 69 6E 66 6F }
+###### jstmax@62-69-74-2E-6C-79-2F-6D-78-5F-69-6E-66-6F
