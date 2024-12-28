@@ -14,7 +14,7 @@ namespace eca {
         * @return true if there is at least one argument, false otherwise.
         **/
         bool chk(int argc, char* argv[]) {
-            if (argc > 1) {return true;}
+            if (argc >= 1) {return true;}
             else {return false;}
         }
 
