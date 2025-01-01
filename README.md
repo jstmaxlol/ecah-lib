@@ -1,6 +1,6 @@
 # ecah-lib 💊
 **ecah-lib** (**e***asier* **c***pp* **a***rgument* **h***andler* **lib***rary*) \
-is a public domain single-file library to easily handle arguments in **C++** *(!)*
+is a header-only library to easily handle arguments in **C++** *(!)*
 
 ### [download ecah-lib](https://github.com/jstmaxlol/ecah-lib/blob/main/ecah-lib.h)
 
