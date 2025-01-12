@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-using namespace std;
 ///
 // ecah-lib - easier cpp argument handler - library
 ///
@@ -14,8 +13,9 @@ namespace eca {
         * @return true if there is at least one argument, false otherwise.
         **/
         bool chk(int argc, char* argv[]) {
-            if (argc >= 1) {return true;}
-            else {return false;}
+            if (argc >= 1)
+										return true;}
+            return false;
         }
 
         /**
@@ -25,8 +25,8 @@ namespace eca {
         * @param argc the count of command-line arguments.
         * @param argv array of command-line argument strings.
         **/
-        bool store(string& output, int chArg, int argc, char* argv[]) {
-            if (argv == nullptr || chArg < 0 || chArg >= argc) {return false;}
+        bool store(std::string& output, int chArg, int argc, char* argv[]) {
+            if (argv == nullptr || chArg < 0 || chArg >= argc) return false;
             if (argc > 1) {
                 output = argv[chArg];
                 return true;
@@ -35,7 +35,7 @@ namespace eca {
     }; arg arg;
 
     void printUsage() {
-        cout << "ecah-lib - easier cpp argument handler - library\n"
+        std::cout << "ecah-lib - easier cpp argument handler - library\n"
         << "built by jstmax! (bit.ly/mx_info / @jstmaxlol on GitHub)\n\n"
 
         << "method/function list for ecah;\n"
