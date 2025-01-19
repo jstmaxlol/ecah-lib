@@ -1,3 +1,7 @@
+# archived,
+### check out [salib](https://github.com/jstmaxlol/salib), basically a simpler && better version of ecah-lib
+&nbsp;
+
 # ecah-lib 💊
 **ecah-lib** (**e***asier* **c***pp* **a***rgument* **h***andler* **lib***rary*) \
 is a header-only library to easily handle arguments in **C++** *(!)*
